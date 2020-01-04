@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/base.css">
+</head>
+<body>
+            <div class="top">
+                <ul>
+                    <li><a href="/"><b>教师工资</b></a></li>
+                    <li><a href="animation"><b>北京与新疆教育经费支出对比</b></a></li>
+                    <li><a href="salary"><b>城镇平均工资水平</b></a></li>
+                    <li><a href="diamond"><b>2018年城镇工资水平各省对比</b></a></li>
+                    <li><a href="scatter"><b>2017年及2018年教师工资情况变化</b></a></li>
+                    <li><a href="wordcloud"><b>2018年教师工资水平各省对比</b></a></li>
+                    <li><a href="user"><b>总结</b></a></li>
+                </ul>
+            </div>
+
+<h2>{{ the_title }}</h2>
+
+
+
+<p>你好，这里是对教师工资研究数据的分析</p>
+    <h4>上面的导航栏，点击就可进入到相对应的数据可视化作品了哦！</h4>
+    <h4>也可以往下拖动查看表格！</h4>
+
+
+</body>
+    <div style="margin-top: 70px">
+{{ echart|safe }}
+{{ the_res|safe }}
+    </div>
+</html>
